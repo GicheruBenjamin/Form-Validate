@@ -7,21 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <header>ALOGIN FORM</header>
     <main>
-        <form action="/" method="get">
-            <span id="error"></span>
-        <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="name">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="password">
-        </div>
-        <button type="submit" id="submit">SUBMIT</button>
-        </form>
-    </main>
-    <footer>Copyright <sup>2024</sup></footer>
+        <h4>This ia a form for user to input their name and age</h4>
+        <form>
+            <label for="name" class="nameLabel">Name</label>
+            <input type="text" id="nameInput" class="name" name="name">
+            <label for="age" class="ageLabel">Age</label>
+            <input type="number" id="ageInput" class="age" name="age">
+            <button type="submit">Submit</button>
+           <div class="result">
+            <p>Name: <span class="nameResult"></span></p>
+            <p>Age: <span class="ageResult"></span></p>
+           </div>
+        </main>
 </body>
 </html>
