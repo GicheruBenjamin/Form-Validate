@@ -3,8 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="script.js"></script>
+    <script defer src="./script.js"></script>
     <title>Document</title>
+    <style>
+                /* Basic styling for the form and results */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h4 {
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Styling for the result display */
+        .result {
+            margin-top: 15px;
+        }
+
+        .result p {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Adding animations to the results */
+        .result span {
+            display: inline-block;
+            margin-left: 5px;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .result span.updated {
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+    </style>
 </head>
 <body>
     <main>
